@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập độ F <input id="doF" type="number" placeholder="Nhập vào độ F" oninput="doiNhietDo(this.value)" onchange="doiNhietDo(this.value)">
+<p> Độ C : <span id="doC"></span> </p>
+
+<script>
+    function doiNhietDo(number) {
+        number = parseFloat(number);
+        document.getElementById("doC").innerHTML = (number - 32)/1.8;
+    }
+</script>
+</body>
+</html>
